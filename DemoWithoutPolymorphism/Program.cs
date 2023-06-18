@@ -7,14 +7,14 @@ namespace DemoWithoutPolymorphism
         static void Main(string[] args)
         {
             Console.WriteLine("******Sounds of the different animals.******");
-            Tiger tiger = new Tiger();
-            tiger.Sound();
+            IAnimal animal = new Tiger();
+            animal.Sound();
 
-            Dog dog = new Dog();
-            dog.Sound();
+            animal = new Dog();
+            animal.Sound();
 
-            Monkey monkey = new Monkey();
-            monkey.Sound();
+            animal = new Monkey();
+            animal.Sound();
             Console.ReadLine();
         }
     }

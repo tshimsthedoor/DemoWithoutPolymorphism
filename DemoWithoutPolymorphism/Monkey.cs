@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DemoWithoutPolymorphism
 {
-    class Monkey
+    class Monkey : IAnimal
     {
         public void Sound()
         {
